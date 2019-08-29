@@ -1,0 +1,22 @@
+{
+  "name": "jnet",
+  "version": "1.0.0",
+  "description": "JunhaNetwork library",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junhaddi/JNet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junhaddi/JNet/issues"
+  },
+  "homepage": "https://github.com/junhaddi/JNet#readme",
+  "dependencies": {
+    "patchwire": "^0.2.2"
+  }
+}
