@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "room_test",
     "id": "8c48c587-0ee2-4c95-99cd-0dc54009b253",
     "creationCodeFile": "",
     "inheritCode": false,
@@ -27,7 +27,7 @@
             "inheritVisibility": false,
             "instances": [
 {"name": "inst_1FFE007C","id": "81d2ecce-857e-4d5a-a34d-3a0898938540","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1FFE007C","objId": "a9d146a0-7029-44c8-90f1-212a1fe83b88","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 32,"y": 32},
-{"name": "inst_340F13ED","id": "63095eaa-2e07-4299-8d90-94315e6687af","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_340F13ED","objId": "7dbd4f63-a138-4448-adf8-d4c5d5739887","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 224,"y": 256}
+{"name": "inst_340F13ED","id": "63095eaa-2e07-4299-8d90-94315e6687af","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_340F13ED","objId": "7dbd4f63-a138-4448-adf8-d4c5d5739887","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 288,"y": 544}
             ],
             "layers": [
 
@@ -45,7 +45,7 @@
             "id": "b635711e-acfe-47b4-8f47-88c722f2ea40",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4288256409 },
+            "colour": { "Value": 4278229329 },
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
@@ -89,12 +89,12 @@
     },
     "roomSettings":     {
         "id": "313d036c-edf1-4bdf-a571-40d19fe19b15",
-        "Height": 600,
+        "Height": 960,
         "inheritRoomSettings": false,
         "modelName": "GMRoomSettings",
         "persistent": false,
         "mvc": "1.0",
-        "Width": 800
+        "Width": 540
     },
     "mvc": "1.0",
     "views": [

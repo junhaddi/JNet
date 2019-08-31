@@ -1,5 +1,5 @@
-/// @desc 서버에서 보낸 명령어를 등록된 핸들러를 통해 실행합니다.
-/// Note: 네트워크 관리 객체에 Async-Networking 이벤트에서 호출해주세요.
+/// @desc 서버에서 보낸 명령어를 등록된 핸들러를 통해 실행합니다
+/// Note: 네트워크 관리 객체에 Async-Networking 이벤트에서 호출해주세요
 
 var netResponse = net_cmd_parse();
 
@@ -28,9 +28,9 @@ if (netResponse >= 0) {
 }
 else {
     if (netResponse == NetEvent.CONNECTFAIL) {
-        net_handle_command("connectFailed", "");
+        net_connectFailed();
     }
 	else if (netResponse == NetEvent.DISCONNECT) {
-        net_handle_command("disconnected", "");
+        net_disconnected();
     }
 }

@@ -1,6 +1,10 @@
-var data = argument0;
-var dx = data[? "x"];
-var dy = data[? "y"];
+/// @desc 플레이어 이동
 
-obj_chr.x = dx;
-obj_chr.y = dy;
+var data = argument0;
+
+with (obj_chr_dummy) {
+	if (playerId == data[? "playerId"]) {
+		x = data[? "x"];
+		y = data[? "y"];
+	}
+}

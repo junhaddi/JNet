@@ -1,5 +1,5 @@
 /// @desc 명령어를 서버로 보냅니다
-/// @param {ds_map} 명령어
+/// @param 명령어
 
 var dataMap = argument0;
 
@@ -12,7 +12,7 @@ buffer_seek(buffer, buffer_seek_start, 0);
 buffer_write(buffer, buffer_string, contentToSend);
 
 // 명령어를 서버에 보냅니다
-network_send_raw(global.patchwire_netSock, buffer, buffer_get_size(buffer));
+network_send_raw(global.netSocket, buffer, buffer_get_size(buffer));
 
 // 메모리를 정리합니다 
 buffer_delete(buffer);

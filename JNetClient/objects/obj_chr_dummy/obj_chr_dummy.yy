@@ -5,13 +5,13 @@
     "name": "obj_chr_dummy",
     "eventList": [
         {
-            "id": "2402a6fb-6668-4a7f-9d73-65721c59b078",
+            "id": "1d31865b-372e-4ce2-866b-ccae36183b0c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
+            "eventtype": 8,
             "m_owner": "d068e379-1781-4afc-acd3-959d78087057"
         }
     ],

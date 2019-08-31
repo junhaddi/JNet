@@ -1,5 +1,8 @@
-var cmd_connected = net_cmd_init("isConnected");
-cmd_connected[? "message"] = "ANGGIMODDI";
-net_cmd_send(cmd_connected);
+/// @desc 서버에 정보 등록요청
 
-show_debug_message("Connected!");
+var command = net_cmd_init("isConnected");
+command[? "x"] = obj_chr.x;
+command[? "y"] = obj_chr.y;
+net_cmd_send(command);
+
+show_debug_message("서버 연결 성공!!!!!!");
