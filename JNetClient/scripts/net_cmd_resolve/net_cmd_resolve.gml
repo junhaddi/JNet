@@ -26,11 +26,3 @@ if (netResponse >= 0) {
         ds_map_destroy(netResponse);
     }
 }
-else {
-    if (netResponse == NetEvent.CONNECTFAIL) {
-        net_connectFailed();
-    }
-	else if (netResponse == NetEvent.DISCONNECT) {
-        net_disconnected();
-    }
-}

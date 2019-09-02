@@ -1,8 +1,8 @@
 {
-    "id": "3a5e2c28-3fc6-454b-ae91-60b8e8cfb3cd",
+    "id": "c9314b85-50d6-4057-b227-7a34f2a580c2",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "net_disconnected",
+    "name": "handle_keepalive",
     "IsCompatibility": false,
     "IsDnD": false
 }

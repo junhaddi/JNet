@@ -5,9 +5,4 @@
 var ip = argument0;
 var port = argument1;
 
-var res = network_connect_raw(global.netSocket, ip, port);
-
-if (res < 0) {
-	// 서버 연결 실패
-    net_connectFailed();
-}
+network_connect_raw(global.netSocket, ip, port);
