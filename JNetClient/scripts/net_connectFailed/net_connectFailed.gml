@@ -1,1 +1,1 @@
-show_message("연결 실패!!!!!!");
+show_message_async("연결 실패!!!!!!");

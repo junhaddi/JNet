@@ -18,6 +18,7 @@ switch (netResponseType) {
         if (async_load[? "succeeded"]) {
             return NetEvent.CONNECT;
         }
+		show_message_async("NETWORK 부분 연결실패");
         return NetEvent.CONNECTFAIL;
 		
     case network_type_disconnect:

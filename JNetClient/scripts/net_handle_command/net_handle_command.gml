@@ -10,7 +10,7 @@ if (ds_map_exists(global.netHandlerMap, command)) {
     var handlerListLength = array_length_1d(handlerList);
     
     for (var i = 0; i < handlerListLength; i++) {
-        var handler = handlerList[i]
+        var handler = handlerList[i];
         script_execute(handler, dataMap);
     }
 }

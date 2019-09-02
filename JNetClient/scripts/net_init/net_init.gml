@@ -9,7 +9,7 @@ network_set_config(network_config_connect_timeout, timeout);
 network_set_config(network_config_use_non_blocking_socket, blocking);
 
 global.netSocket = network_create_socket(network_socket_tcp);
-global.netHandlerMap = ds_map_create();						
+global.netHandlerMap = ds_map_create();
 global.isNetConnect = false;		
 global.playerId = -1;
 

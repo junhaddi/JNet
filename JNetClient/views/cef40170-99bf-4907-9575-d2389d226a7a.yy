@@ -8,7 +8,7 @@
         "3a5e2c28-3fc6-454b-ae91-60b8e8cfb3cd"
     ],
     "filterType": "GMScript",
-    "folderName": "Status",
+    "folderName": "Event",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

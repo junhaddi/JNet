@@ -4,7 +4,7 @@ const ClientManager = require("patchwire").ClientManager;
 
 // 명령어 헨들러
 var commandHandlers = {
-    isConnected: function(socket, data) {
+    connected: function(socket, data) {
         var playerId = Date.now().toString();
         socket.set("playerId", playerId);
         socket.set("x", data.x);
@@ -37,6 +37,13 @@ var commandHandlers = {
             }
         });
     },
+    clientDropped: function(player) {
+        // 플레이어 연결 끊김
+        clientManager.broadcast("disconnected", {
+            playerId: player.get("playerId"),
+        });
+        console.log("Player disconnect...");
+    },
     movePlayer: function(socket, data) {
         socket.set("x", data.x);
         socket.set("y", data.y);
@@ -56,8 +63,9 @@ clientManager.setTickMode(true);
 clientManager.setTickRate(1000 / 60);
 clientManager.startTicking();
 
-clientManager.addCommandListener("isConnected", commandHandlers.isConnected);
+clientManager.addCommandListener("connected", commandHandlers.connected);
 clientManager.addCommandListener("movePlayer", commandHandlers.movePlayer);
+clientManager.on("clientDropped", commandHandlers.clientDropped);
 
 // 서버
 var server = new Server(function(client) {

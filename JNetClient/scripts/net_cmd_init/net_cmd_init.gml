@@ -3,6 +3,6 @@
 
 var command = argument0;
 
-netCommandMap = ds_map_create();
+var netCommandMap = ds_map_create();
 ds_map_add(netCommandMap, "command", command);
 return netCommandMap;
